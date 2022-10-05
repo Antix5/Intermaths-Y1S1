@@ -74,7 +74,7 @@ We now need to do some algebra to get the solution of the PDE.
 
 $$
 t_0 = 0 \\
-therefore \\; \\
+\\; therefore \\; \\
 t(s) = s \\; and \\; x(s) = c t + x_0
 $$
 
