@@ -6,8 +6,8 @@ Detailed explanation with the example of the transport equation:
 
 $$
 \begin{cases}
-u_t + c u_x = 0 ; (x,t) \in \Reals \times \Reals^+ \\
-u(x, 0) = u_0(x) ; x \in \Reals
+u_t + c u_x = 0 ; (x,t) \in \mathbb{R} \times \mathbb{R}^+ \\
+u(x, 0) = u_0(x) ; x \in \mathbb{R}
 \end{cases}
 $$
 
@@ -74,8 +74,8 @@ We now need to do some algebra to get the solution of the PDE.
 
 $$
 t_0 = 0 \\
-therefore \; \\
-t(s) = s \; and \; x(s) = c t + x_0
+therefore \\; \\
+t(s) = s \\; and \\; x(s) = c t + x_0
 $$
 
 We isolate $x_0$ to reinject it in the solution of the PDE.
