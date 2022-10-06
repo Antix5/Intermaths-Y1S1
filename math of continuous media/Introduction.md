@@ -18,9 +18,52 @@ The divergence theorem is the following:
 
 $$\int_{\partial V} \vec{F} \cdot \vec{n} dS = \int_V \operatorname{div} \vec{F} dV$$
 
-### Transport formula
 
-The transport formula, allows to move the derivative in respect to time to the left
+#### Lagrangian and Eulerian coordinates
+
+The Lagrangian coordinates are the coordinates of the medium in the reference frame of the medium.
+
+The Eulerian coordinates are the coordinates of the medium in the reference frame of the observer.
+
+Eulerian coordinates are noted by $x$ and Lagrangian coordinates are noted by $X$.
+
+##### How to transform from Lagrangian to Eulerian coordinates
+
+$\tilde{g}$ is a lagrangian description
+
+$$\tilde{g}(X,t) = g(\Phi(X,t),t)$$
+
+where $\Phi$ is the transformation from Lagrangian to Eulerian coordinates.
+
+##### How to transform from Eulerian to Lagrangian coordinates
+
+$g$ is an eulerian description
+
+$$g(x,t) = \tilde{g}(\Phi^{-1}(x,t),t)$$
+
+where $\Phi^{-1}$ is the transformation from Eulerian to Lagrangian coordinates.
+
+For any fixed X, the curve $t \leftarrow \Phi(X,t)$ is called the **trajectory** of the point X.
+
+##### Description of velocity in Lagrangian and Eulerian coordinates
+
+In Lagrangian coordinates, the velocity is given by
+
+$$\tilde{u}(X,t) = \frac{\partial\Phi(X,t)}{\partial t}$$
+
+Lagrangian acceleration is given by
+
+$$\tilde{a}(X,t) = \frac{\partial \tilde{u}(X,t)}{\partial t}$$
+
+In Eulerian coordinates, the velocity is given by
+
+$$u(x,t) = \tilde{u}(\Phi^{-1}(x,t),t)$$
+$$a(x,t) = \tilde{a}(\Phi^{-1}(x,t),t)$$
+
+
+### Transport theorem
+
+The transport theorem, allows to move the derivative in respect to time to the left
 
 $$\frac{d}{dt} \int_{A(t)} g(x,t) dx = \int_{A(t)} (\frac{D}{Dt}g + g\nabla \cdot u) dx$$
 
@@ -42,4 +85,7 @@ $$\frac{D\rho}{Dt} + \rho\nabla \cdot u = 0$$
 and therefore
 
 $$\frac{d}{dt} \int_{A(t)} \rho \psi dx = \int_{A(t)} \rho \frac{D\psi}{Dt} dx$$
+
+
+
 
