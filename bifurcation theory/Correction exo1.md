@@ -4,7 +4,7 @@ Solve $\dot{x} = Ax$ for
 
 ### a)
 
-$A = \begin{pmatrix} 3 & 1 \\ 1 & 3 \end{pmatrix}$
+$$A = \begin{pmatrix} 3 & 1 \\ 1 & 3 \end{pmatrix}$$
 
 Solution :
 
@@ -30,7 +30,7 @@ v_1 = \begin{pmatrix} 1 \\ 1 \end{pmatrix} \\
 v_2 = \begin{pmatrix} 1 \\ -1 \end{pmatrix}
 \end{cases}$$
 
-So P = $\begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}$
+So P = $$\begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}$$
 
 $$det(P)=-1-1=-2$$
 
