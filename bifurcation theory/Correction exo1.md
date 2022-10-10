@@ -544,6 +544,53 @@ e^t-e^{-t} & 0 & 2e^{-t}
 C
 $$
 
+### d)
+
+$$
+A =
+\begin{pmatrix}
+0 & -2 & 0 \\
+1 & 2 & 0 \\
+0 & 0 & -2
+\end{pmatrix}
+$$
+
+$$
+det(A-XI) = (-2-X)(-X(2-X)+2) = 0
+\Leftrightarrow
+\begin{cases}
+-2-X = 0 \\
+-X(2-X)+2 = 0 \Leftrightarrow X^2-2X+2 = 0
+\end{cases}
+$$
+
+$$
+X^2-2X+2 = 0 \\
+\Delta = 4-4(1)(2) = 4-8 = -4 \\
+X_{1,2} = \frac{2\pm i\sqrt{4}}{2} = 1 \pm i
+$$
+
+We have 3 eigenvalues: -2, 1+i and 1-i
+
+We can now compute the eigenvectors:
+
+For $v_1$ :
+
+$$
+\begin{pmatrix}
+-2 & -2 & 0 \\
+1 & 0 & 0 \\
+0 & 0 & -4
+\end{pmatrix}
+v_1 = 0
+$$
+
+In that case, it's impossible to find a solution for $v_1$ as a standard eigenvector but we can try to find a generalized eigenvector:
+
+
+
+
+
 
 
 
