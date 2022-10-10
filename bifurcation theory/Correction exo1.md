@@ -4,11 +4,16 @@ Solve $\dot{x} = Ax$ for
 
 ### a)
 
-$$A = \begin{pmatrix} 3 & 1 \\ 1 & 3 \end{pmatrix}$$
+$$A =
+\begin{pmatrix}
+3 & 1 \\
+1 & 3
+\end{pmatrix}$$
 
 Solution :
 
-$$0=det(A-XI)=det\begin{pmatrix}
+$$0=det(A-XI)=det
+\begin{pmatrix}
 3-X & 1 \\
 1 & 3-X 
 \end{pmatrix}\\
@@ -120,7 +125,11 @@ $$
 
 ### b)
 
-$A = \begin{pmatrix} 2 & 4 \\ -1 & 2 \end{pmatrix}$
+$$A =
+\begin{pmatrix}
+2 & 4 \\
+-1 & 2
+\end{pmatrix}$$
 
 Solution :
 
@@ -129,7 +138,7 @@ $$0=det(A-XI)=det\begin{pmatrix}
 -1 & 2-X
 \end{pmatrix}\\
 =(2-X)(2-X)+4
-\\\Leftrightarrow\\
+\\ \Leftrightarrow \\
 (2-X)^2=-4 \Rightarrow
 \begin{cases}
 2-X=2i \Leftrightarrow X=2-2i=2(1-i)\\
