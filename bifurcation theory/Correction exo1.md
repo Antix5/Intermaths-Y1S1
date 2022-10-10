@@ -362,6 +362,196 @@ e^{2t}cos(2t) & 2e^{2t}sin(2t) \\
 C
 $$
 
+### c)
+
+$$
+A = 
+\begin{pmatrix}
+1 & 0 & 0 \\
+1 & 2 & 0 \\
+1 & 0 & -1
+\end{pmatrix}
+$$
+
+We have here a lower triangular matrix, so the eigenvalues are the diagonal elements. We have:
+
+$$\lambda_1 = 1 \\
+\lambda_2 = 2 \\
+\lambda_3 = -1$$
+
+We can now compute the eigenvectors:
+
+For $v_1$ :
+
+$$
+\begin{pmatrix}
+0 & 0 & 0 \\
+1 & 1 & 0 \\
+1 & 0 & -2
+\end{pmatrix}
+v_1 = 0
+$$
+
+In that case 
+
+$$v_1 = \begin{pmatrix}
+2 \\
+-2 \\
+1
+\end{pmatrix}$$
+
+For $v_2$ :
+
+$$
+\begin{pmatrix}
+-1 & 0 & 0 \\
+1 & 0 & 0 \\
+1 & 0 & -3
+\end{pmatrix}
+v_2 = 0
+$$
+
+In that case $v_2$ is:
+
+$$v_2 = \begin{pmatrix}
+0 \\
+1 \\
+0
+\end{pmatrix}$$
+
+For $v_3$ :
+
+$$
+\begin{pmatrix}
+2 & 0 & 0 \\
+1 & 3 & 0 \\
+1 & 0 & 0
+\end{pmatrix}
+v_3 = 0
+$$
+
+In that case $v_3$ is:
+
+$$v_3 = \begin{pmatrix}
+0 \\
+0 \\
+1
+\end{pmatrix}$$
+
+We now have three eigenvectors and three eigenvalues. We can now find the matrix $P$ :
+
+$$P = \begin{pmatrix}
+2 & 0 & 0 \\
+-2 & 1 & 0 \\
+1 & 0 & 1
+\end{pmatrix}$$
+
+The determinant of a diagonal matrix is the product of the diagonal elements. We compute det(P) :
+
+$$det(P) = 2$$
+
+so $P$ is invertible. We can now compute $P^{-1}$ :
+
+I compute the comatrix of P:
+
+$$com(P) = \begin{pmatrix}
+1 & 2 & -1 \\
+0 & 2 & 0 \\
+0 & 0 & 2
+\end{pmatrix}$$
+
+so $P^{-1}$ is:
+
+$$P^{-1} = \frac{1}{2}
+\begin{pmatrix}
+1 & 0 & 0 \\
+2 & 2 & 0 \\
+-1 & 0 & 2
+\end{pmatrix}$$
+
+We check that $P^{-1}P = I$ :
+
+$$P^{-1}P = \frac{1}{2}
+\begin{pmatrix}
+1 & 0 & 0 \\
+2 & 2 & 0 \\
+-1 & 0 & 2
+\end{pmatrix}
+\begin{pmatrix}
+2 & 0 & 0 \\
+-2 & 1 & 0 \\
+1 & 0 & 1
+\end{pmatrix} =
+\begin{pmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{pmatrix} = I$$
+
+We can now compute $e^{At}$ :
+
+$$e^{At} = P e^{\Lambda t} P^{-1}$$
+
+$$e^{\Lambda t} = \begin{pmatrix}
+e^{t} & 0 & 0 \\
+0 & e^{2t} & 0 \\
+0 & 0 & e^{-t}
+\end{pmatrix}$$
+
+$$e^{At} = \begin{pmatrix}
+2 & 0 & 0 \\
+-2 & 1 & 0 \\
+1 & 0 & 1
+\end{pmatrix}
+\begin{pmatrix}
+e^{t} & 0 & 0 \\
+0 & e^{2t} & 0 \\
+0 & 0 & e^{-t}
+\end{pmatrix}
+\frac{1}{2}
+\begin{pmatrix}
+1 & 0 & 0 \\
+2 & 2 & 0 \\
+-1 & 0 & 2
+\end{pmatrix}$$
+
+$$e^{At} = \begin{pmatrix}
+2e^{t} & 0 & 0 \\
+-2e^{t} & e^{2t} & 0 \\
+e^{t} & 0 & e^{-t}
+\end{pmatrix}
+\frac{1}{2}
+\begin{pmatrix}
+1 & 0 & 0 \\
+2 & 2 & 0 \\
+-1 & 0 & 2
+\end{pmatrix}$$
+
+$$e^{At} = \frac{1}{2}
+\begin{pmatrix}
+2e^{t} & 0 & 0 \\
+-2e^t + 2e^{2t} & 2e^{2t} & 0 \\
+e^t-e^{-t} & 0 & 2e^{-t}
+\end{pmatrix}$$
+
+$$x(t) =
+\frac{1}{2}
+\begin{pmatrix}
+2e^{t} & 0 & 0 \\
+-2e^t + 2e^{2t} & 2e^{2t} & 0 \\
+e^t-e^{-t} & 0 & 2e^{-t}
+\end{pmatrix}
+C
+$$
+
+
+
+
+
+
+
+
+
 
 
 
