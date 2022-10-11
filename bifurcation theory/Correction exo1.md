@@ -570,26 +570,94 @@ X^2-2X+2 = 0 \\
 X_{1,2} = \frac{2\pm i\sqrt{4}}{2} = 1 \pm i
 $$
 
-We have 3 eigenvalues: -2, 1+i and 1-i
+We have 3 eigenvalues: $-2$, $1+i$ and $1-i$
 
 We can now compute the eigenvectors:
 
 For $v_1$ :
 
 $$
+A =
 \begin{pmatrix}
--2 & -2 & 0 \\
-1 & 0 & 0 \\
-0 & 0 & -4
+0 & -2 & 0 \\
+1 & 2 & 0 \\
+0 & 0 & -2
 \end{pmatrix}
-v_1 = 0
+\begin{pmatrix}
+0 \\
+0 \\
+1
+\end{pmatrix} = -2
+\begin{pmatrix}
+0 \\
+0 \\
+1
+\end{pmatrix}
 $$
 
-In that case, it's impossible to find a solution for $v_1$ as a standard eigenvector but we can try to find a generalized eigenvector:
+For $v_2$ and $v_3$, they will be generalised eigenvectors.
 
+$$
+P = \begin{pmatrix}
+0 & -1-i & -1+i \\
+0 & 1 & 1 \\
+1 & 0 & 0
+\end{pmatrix}
+$$
 
+Same steps as before:
 
+$$P^{-1}=
+\frac{1}{2}
+\begin{pmatrix}
+0 & 0 & 2 \\
+i & 1 + i & 0 \\
+-i & 1 - i & 0
+\end{pmatrix}
+$$
 
+We compute the matrix exponential:
+
+$$
+e^{At} = P e^{\Lambda t} P^{-1} =
+\begin{pmatrix}
+0 & -1-i & -1+i \\
+0 & 1 & 1 \\
+1 & 0 & 0
+\end{pmatrix}
+\begin{pmatrix}
+e^{-2t} & 0 & 0 \\
+0 & e^{t}e^{i\theta} & 0 \\
+0 & 0 & e^{t}e^{-i\theta}
+\end{pmatrix}
+\frac{1}{2}
+\begin{pmatrix}
+0 & 0 & 2 \\
+i & 1 + i & 0 \\
+-i & 1 - i & 0
+\end{pmatrix}
+$$
+
+We do all the computations:
+
+$$
+e^{At} = \begin{pmatrix}
+0 & -1-i & -1+i \\
+0 & 1 & 1 \\
+1 & 0 & 0
+\end{pmatrix}
+\begin{pmatrix}
+e^{-2t} & 0 & 0 \\
+0 & e^{t}e^{i\theta} & 0 \\
+0 & 0 & e^{t}e^{-i\theta}
+\end{pmatrix}
+\frac{1}{2}
+\begin{pmatrix}
+0 & 0 & 2 \\
+i & 1 + i & 0 \\
+-i & 1 - i & 0
+\end{pmatrix}
+$$
 
 
 
