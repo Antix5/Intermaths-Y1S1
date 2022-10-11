@@ -86,7 +86,45 @@ Example :
 
 $$\dot{x}=
 \begin{pmatrix}
-0 & 1 \\
--1 & 0
+-2 & -1 & 0 \\
+1 & -2 & 0 \\
+0 & 0 & -3
 \end{pmatrix}
 x$$
+
+$$\lambda_1 = -2+i, \lambda_2 = -2-i, \lambda_3 = -3 \\
+Re (\lambda) < 0 \: \forall \lambda$
+
+Figure 1.
+
+$\bar{x}=\bar{0}$ is a sink
+
+Th : the following statements are equivalent
+
+(a) $\forall x_0 F 0, lim_{t \rightarrow \inf} || e^{At}x_0 || = 0 \\ lim_{t \rightarrow \inf} || e^{At}x_0 || = \infty$
+
+(b) for all eigenvalues of A, Re($\lambda$) < 0
+
+(c) there exist $ M > 0$ and $x_0 \in \mathbb{R}^n$ such that
+$||e^{At}x_0|| \leq M e^{tRe(\lambda)}$ for all $\lambda$.	
+(to recheck)
+
+Proof: Due to the previous result each coordinate of every solution of $\dot{x} = Ax$ is a linear combination of functions
+
+$\xi . t^k e^{at} cos(bt)$ or $\xi . t^k e^{at} sin(bt)$
+
+where $\xi$ is a linear combination of coordinates of $x_0$.
+
+$$|\xi|\leq c ||x_0||$$
+
+(a) => (b) , By the contrary, assume that for some $\lambda = a + ib$ , $a\geq 0$.
+
+$\Rightarrow$ at leaste one coordonate of some solution takes the following form
+
+$$ \xi . t^k e^{at} cos(bt) \Rightarrow ||e^{At}x_0|| \geq |\xi| |t|^k e^{at} |cos(bt)|$$
+
+does not converge to 0 when t goes to infinity.
+
+(b) => (c) , (b) $\Rightarrow$ every coordinate has the form $\xi . t^k e^{at} cos(bt) \Rightarrow$
+
+Remark :  Th can be reformulated for the case (b) $\forall \lambda$ Re($\lambda$) > 0
