@@ -128,3 +128,4 @@ does not converge to 0 when t goes to infinity.
 (b) => (c) , (b) $\Rightarrow$ every coordinate has the form $\xi . t^k e^{at} cos(bt) \Rightarrow$
 
 Remark :  Th can be reformulated for the case (b) $\forall \lambda$ Re($\lambda$) > 0
+
