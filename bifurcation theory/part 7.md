@@ -480,6 +480,89 @@ $$
 \forall c \in U \; \Phi_t(c) \rightarrow \bar{0} \text{ as } t \rightarrow -\infty ( \Rightarrow U \text{ is an unstable manifold})
 $$
 
+<p style="text-align: center; text-decoration: underline;">Linearisation</p>
+
+$$
+\dot{x}=f(x) \quad (1)
+$$
+
+Def: A point $x_0$ is cammed an equilibrium point (or critical point) if f(x_0)=0
+For the corresponding flow $\Phi_t$ we have $\Phi_t(x_0) = x_0$ for all t, so $x_0$ is a fixed point for $\Phi_t$
+
+Let is denote $A=Df(x_0)$
+
+The linear system
+
+$$
+\dot{x} = Ax \quad (2)
+$$
+is called the linearisation (or linearised system) for (1)
+
+Def : An equilibrium point x_0 is called hyperbolic if for all eigenvalues of A $\lambda(A)$ we have : $Re(\lambda) \neq 0$
+
+Remark
+
+Assume that $x_0 = 0, f(0)=0$. Then, by Taylor's theorem, we have : 
+
+$$
+f(x) = Df(0) x + \frac{1}{2}D^2f(0)(x,x) + \dots
+$$
+
+Def: An equilibrium point $x_0$ is called a sink if for all eigenvalues of A $\lambda(A)$ we have : $Re(\lambda) < 0$
+
+Def: An equilibrium point $x_0$ is called a source if for all eigenvalues of A $\lambda(A)$ we have : $Re(\lambda) > 0$
+
+Def: An equilibrium point $x_0$ is called a saddle if $x_0$ is hyperbolic and not a sink or a source
+
+Example:
+
+$$
+\begin{cases}
+\dot{x_1} = -x_1 \\
+\dot{x_2} = x_1^2 + x_2
+\end{cases}
+f(x) = \begin{pmatrix} -x_1 \\ x_1^2 + x_2 \end{pmatrix}\\
+Df(x) = \begin{pmatrix} -1 & 0 \\ 2x_1 & 1 \end{pmatrix}\\
+A = Df(0) = \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix}
+$$
+
+The eigenvalues of A are $\lambda_1 = -1$ and $\lambda_2 = 1$ we therefore have a saddle point at $x_0 = \bar{0}$
+
+Example:
+
+$$
+\begin{cases}
+\dot{x_1} = x_1^2 - x_2^2 - 1 \\
+\dot{x_2} = 2x_2
+\end{cases}
+\text{ Eg. points: }
+\begin{cases}
+x_1^2 - x_2^2 - 1 = 0 \\
+2x_2 = 0
+\end{cases}
+$$
+
+$$
+x_0^{(1)} = \begin{pmatrix} 1 \\ 0 \end{pmatrix} \text{ and } x_0^{(2)} = \begin{pmatrix} -1 \\ 0 \end{pmatrix}
+$$
+
+$$
+Df(x_0^{(1)}) = \begin{pmatrix} 2 & 0 \\ 0 & 2 \end{pmatrix} \text{ and } Df(x_0^{(2)}) = \begin{pmatrix} -2 & 0 \\ 0 & 2 \end{pmatrix}
+$$
+
+So the first one isa source and the second one a saddle point.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
