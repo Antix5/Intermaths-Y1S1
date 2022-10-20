@@ -552,8 +552,55 @@ $$
 
 So the first one isa source and the second one a saddle point.
 
+Remark : We'll see later (the Hartman-Grobman theorem) that is $x_0$ is a hyperbolic equilibrium point, then the local behaviour of (1) is topologically equivalent to the local behaviour of (2), i.e., $ \exists \text{ a neighbourhood } N(x_0) \text{ and } N(\bar{0})$
+There exists a continuous one to one mapping $H : N(x_0) \rightarrow N(\bar{0})$ which transforms trajectories of (1) into trajectories of (2) and vice versa.
 
+Example : 
 
+$$
+\begin{cases}
+\dot{x_1} = -x_1 \\
+\dot{x_2} = x_1^2 + x_2
+\end{cases}
+A = Df(0) = \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix}
+$$ \dot{x} = Ax
+$$
+
+Consider the map $H : R^2 \rightarrow R^2$ defined by $H(x) = \begin{pmatrix} x_1 \\ x_2 + \frac{x_1^2}{3}\end{pmatrix}$
+
+$$
+H: R^2 \rightarrow R^2 \text{ is a bijection}\\
+\Leftrightarrow \\
+\forall y \in R^2 \; \exists! x \in R^2 : H(x)=y
+$$
+
+$$
+y=\begin{pmatrix} y_1 \\ y_2 \end{pmatrix} \Rightarrow x = \begin{pmatrix} x_1 \\ x_2 + \frac{x_1^2}{3}\end{pmatrix}
+$$
+
+For $y=H(x)$, where $x=x|H = \begin{pmatrix} x_1|H \\ x_2|H \end{pmatrix}$ we have :
+
+$$
+\dot{y}=\begin{pmatrix}
+\dot{x_1} \\
+\dot{x_2} + \frac{2}{3}x_1 \dot{x_1}
+\end{pmatrix} = \begin{pmatrix}
+-x_1 \\
+x_1^2 + x_2 - \frac{2}{3}x_1^2
+\end{pmatrix} = \begin{pmatrix}
+-x_1 \\
+x_1^2 + x_2 - \frac{2}{3}x_1^2
+\end{pmatrix} = \begin{pmatrix}
+-y_1 \\
+y_2
+\end{pmatrix}
+=A \begin{pmatrix}
+y_1 \\
+y_2
+\end{pmatrix}
+$$
+
+A linear system
 
 
 
