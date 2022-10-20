@@ -602,10 +602,98 @@ $$
 
 A linear system
 
+<p style="text-align: center; text-decoration: underline;">The Stable Manifold Theorem</p>
 
+Description : This theorem claims that near a hyperbolic equilibrium point $x_0$, the non-linear system $\dot{x} = f(x)$ has stable and unstable manifolds S and U respectively, tengent at $x_0$ to the stable and unstable subspaces of the linearised system $\dot{x} = Ax$., where $A = Df(x_0)$, moreover, $dim(S) = dim(E^S) and dim(U) = dim(E^U)$,
+$\Phi_t(S) \subset S$
+$\forall t > 0$
+and
+$\Phi_t(U) \subset U$ \forall t \leq 0$
 
+$$
+\Phi_t(c)_{t \rightarrow \infty} \rightarrow x_0 \quad \forall x \in S \\
+\Phi_t(c)_{t \rightarrow -\infty} \rightarrow x_0 \quad \forall x \in U
+$$
 
+Example :
 
+$$
+\begin{cases}
+\dot{x_1} = -x_1 \\
+\dot{x_2} = x_1^2 - x_2 \\
+\dot{x_3} = x_1^2 + x_3
+\end{cases} \quad
+A = Df(0) = \begin{pmatrix} -1 & 0 & 0 \\ 0 & -1 & 0 \\ 0 & 0 & 1 \end{pmatrix}
+$$
+
+$$
+v_1 = \begin{pmatrix} 1 \\ 0 \\ 0 \end{pmatrix} \text{ and } v_2 = \begin{pmatrix} 0 \\ 1 \\ 0 \end{pmatrix}
+ \text{ and } v_3 = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}
+$$
+
+$$
+x_1(t) = C_1 e^{-t} \\
+x_2(t) = C_2 e^{t} + c_1^2( e^{-t} - e^{-2t}) \\
+x_3(t) = C_3 e^{t} + \frac{c_1^2}{3} (e^{t} - e^{-2t})
+$$
+
+$$
+\Phi_t(c) = \begin{pmatrix}
+C_1 e^{-t} \\
+C_2 e^{t} + c_1^2( e^{-t} - e^{-2t}) \\
+C_3 e^{t} + \frac{c_1^2}{3} (e^{t} - e^{-2t})
+\end{pmatrix}
+$$
+
+$$
+c= \begin{pmatrix} c_1 \\ c_2 \\ c_3 \end{pmatrix} = x(0) \quad
+\{\Phi_t:R^3 \rightarrow R^3\}_{t \in R}
+$$
+What is S and U ?
+
+S = {$x \in R^3 | c_3 + \frac{c_1^2}{3} = 0$}
+
+Necessary information: 
+
+$F(x_1, \dots x_n) = 0$ is a given surface
+
+The tangent place at $x^0=(x_1^0, x_2^0, x_3^0)$ is given by :
+
+$$
+\frac{\partial F}{\partial x_y} (x^0) (x_1 - x_1^0) + \frac{\partial F}{\partial x_2} (x^0) (x_2 - x_2^0) + \frac{\partial F}{\partial x_3} (x^0) (x_3 - x_3^0) = 0
+$$
+
+In our case $S: F(c_1, c_2, c_3) = c_3 + \frac{c_1^2}{3} = 0$, $c^0 = \bar{0}$
+
+$$
+\frac{\partial F}{\partial x_1} (\bar{0}) (x_1 - 0) + \frac{\partial F}{\partial x_2} (\bar{0}) (x_2 - 0) + \frac{\partial F}{\partial x_3} (\bar{0}) (x_3 - 0) = 0
+$$
+
+We obtain that S is tangent to $E^S$ at $\bar{0}$
+
+Necessary information:
+
+X is a matrix space if $\exists\rho: X \times X \rightarrow R$ such that :
+$\rho(x,x)=0$
+$\rho(x,y)=\rho(y,x)$
+$\rho(x,y) + \rho(y,z) \geq \rho(x,z)$
+
+X is connected if ther is no open sets A and B such that 
+$A \cap B = \emptyset$, $A \cup B = X$
+
+Def (Homomorphism) : Let X be a matrix space, $A \subset X$ and $B \subset X$ be given sets:
+A mapping $h: A \rightarrow B$ is a homomorphism if h is continuous, bijective and $h'$ is continuous
+
+The sets A and B are called homeomorphic (or topologically equivalent) if there exists a homomorphism $h: A \rightarrow B$
+
+Example : (a,b) is homeomorphic to (-\infty, \infty)
+
+$$
+h : (a,b) \rightarrow (-\infty, \infty) \\
+\quad h(x) = \frac{1}{a-x} + \frac{1}{b-x}
+$$
+
+Example : 
 
 
 
