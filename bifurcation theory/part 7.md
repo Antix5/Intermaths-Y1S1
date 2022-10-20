@@ -430,6 +430,59 @@ $$
 \Phi_t(S) \subset S , \forall t >= 0 ( \Phi_t(S) \subset S, \forall t \leq 0)
 $$
 
+Exemple
+
+$$
+\begin{cases}
+\dot{x_1} = -x_1 \\
+\dot{x_2} = x_1^2 + x_2
+\end{cases}
+$$
+
+$$
+x_1 = x_1^0 e^{-t} \;, \\
+\dot{x_2}=x_2 + (x_1^0)^2 e^{-2t}
+$$
+
+Variation of the constant
+
+$$
+x_2(t)= x_2^0 e^{t} + e^t \int_0^t e^{-s} (x_1^0)^2 e^{-2s} ds \\
+x_2(t)=x_2^0 e^{t} + \frac{(x_1^0)^2}{3} (e^t - e^{-2t})
+$$
+
+So, for every $c = \begin{pmatrix} c_1 \\ c_2 \end{pmatrix}$
+
+$$
+\Phi(t,x) = \begin{pmatrix} c_1 e^{-t} \\ c_2 e^{t} + \frac{(c_1)^2}{3} (e^t - e^{-2t}) \end{pmatrix}
+$$
+
+Consider the set $$S= \{x \in R^2 | x_2 = \frac{x_1^2}{3} \}$$
+
+(missing some part, look at the lecture to get it, just simplifications)
+
+
+$$
+\Phi_t = \begin{pmatrix} c_1 e^{-t} \\ \frac{(c_1)^2}{3} (e^t - e^{-2t}) \end{pmatrix}
+$$
+
+So, for $\forall t, \forall x \in S \; \Phi(t,x) \in S \Rightarrow S \text{ is invariant}$
+
+Consider U = $\{x \in R^2 | x_1 = 0\}$
+
+$$
+\forall c = \begin{pmatrix} c_1 \\ c_2 \end{pmatrix} \; \Phi_t = \begin{pmatrix} 0 \\ c_2 e^{t} \end{pmatrix} \in U \Rightarrow U \text{ isinvariant}
+$$
+
+It is easy to see that :
+$$
+\forall c \in S \; \Phi_t(c) \rightarrow \bar{0} \text{ as } t \rightarrow \infty ( \Rightarrow S \text{ is a stable manifold})\\
+\forall c \in U \; \Phi_t(c) \rightarrow \bar{0} \text{ as } t \rightarrow -\infty ( \Rightarrow U \text{ is an unstable manifold})
+$$
+
+
+
+
 
 
 
