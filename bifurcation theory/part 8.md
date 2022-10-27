@@ -69,3 +69,125 @@ In the proof , it will be shown that there exits a n-k $C^1$ function $ \Psi_j$ 
 $$y_j = \Psi_j(y_1 \dots, y_x), j=\bar{k+1, n}$$
 
 define k-dimentional manifold $\bar{S}$ is y span. Then after linear transformation $x=Cy$ we obtain the required S in subspace
+
+Sketch of the proof ;  Introcude U(t) = $\begin{pmatrix}
+e^{pt} & 0 \\
+0 & 0 \end{pmatrix}$
+
+$V(t) = \begin{pmatrix}
+0 & 0 \\
+0 & e^{qt} \end{pmatrix}$
+
+U(0) + V(0) = I
+
+$$ \dot{U(t)} = BU, \dot{V(t)} = BV$$ and $e^{Bt} = U(t) + V(t)$$
+
+$$u(t,a) = U(t)a + \int_0^t U(t-s)G(U(s)a)ds - \int_0^t V(t-s)G(u(s)a)ds \quad (4)$$
+
+We can solve (4) with the succesive approximation method : 
+
+$$ u^{j+1}(t,a) = U(t)a + \int_0^t U(t-s)G(u^{(j)}(s)a)ds - \int_0^t V(t-s)G(u^{(j)}(s)a)ds$$
+
+
+It can be proved, u^(j) converges to u(t,a) uniformly on $(0, +\infty) \times \{ || a || < \frac{\delta}{2k}\}$
+
+Let us consider $u = \begin{pmatrix} u_1 \\ \vdots \\ u_n \end{pmatrix}$
+
+Let's look at (4) again : 
+
+$$
+u(t,a) = U(t)a + \int_0^t U(t-s)G(u(s)a)ds - \int_0^t V(t-s)G(u(s)a)ds
+$$
+
+$$
+u_j(0,a)= - (\int_t^\infty V(-s)G(u(s, a_1 \dots, a_n))ds)_j
+$$
+
+$$
+\Psi_j(a_1 \dots, a_k) = u_j( \infty, a_1 \dots, a_k)
+$$
+(to recheck )
+
+We put $\bar{S} = \{ y \in R^n | y_j = \Psi_j(y_1 \dots, y_n), j=\bar{k+1, n}, \sqrt{\sum_{j=k+1}^n y_i^2 } < \frac{\delta}{2k} \}$
+
+Then $S = C\bar{S}$
+
+$$\forall y(0) + \tilde{S} \forall t \geq 0, y(t,y(0)) \in \tilde{S}$$
+
+moreover, it can be proved that 
+
+$$
+\frac{\partial \Psi_j}{\partial y_i}(0) = 0
+$$
+
+Son the tangent subspace to (7) of 0 is given by
+
+$$\{y\in R^n | y_{k+1} = y_{k+1} = ... = 0  \}$$
+
+The existence of unstable manifoldes $ \tilde{U}$ can be proved after changing the variable "t" to "-t",
+
+Then the stable manifold of $\dot{y} = By - G(y)$ will be the unstable manifold of $\tilde{U}$ of (3)
+
+Corollary : Under the hypothses of the Stable Manifold Theorem, $ \forall \epsilon > 0, \exists \delta > 0$ such that
+
+$$ \forall x_0 \in S \cap N_\delta(\bar{0}), || \Phi_t(x_0) || \leq \epsilon e^{-\alpha t}, \forall t \geq 0$$
+
+$$ \forall x_0 \in S \cap N_\delta(\bar{0}), || \Phi_t(x_0) || \leq \epsilon e^{-\beta t}, \forall t \leq 0$$
+
+Exemple : 
+
+$$\begin{cases}
+\dot{x_1} = -x_1 - x_2^2 \\
+\dot{x_2} = x_1^2 - x_2
+\end{cases}$$
+
+$$
+A = Df(\bar{0}) \begin{pmatrix}
+-1 & 0 \\
+0 & 1
+\end{pmatrix}
+$$
+
+The eigenvalues are $ \lambda_1 = -1, \lambda_2 = 1$
+
+Let's find u^{(1)}(t,a) and u^{(2)}(t,a) : and use $u^{(2)}$ to approximate stable manifold
+
+$$
+u(t,a) = \begin{pmatrix}
+e^{-t} & 0 \\	
+0 & 0
+\end{pmatrix}a + \int_0^t \begin{pmatrix}
+e^{-(t-s)} & 0 \\
+0 & 0
+\end{pmatrix} \begin{pmatrix} - u_1(s,a)^2 \\ u_2(s,a)^2
+\end{pmatrix}ds - \int_t^\infty \begin{pmatrix}
+0 & 0 \\ 0 & e^{(t-s)}
+\end{pmatrix} \begin{pmatrix} - u_1(s,a)^2 \\ u_2(s,a)^2
+\end{pmatrix}ds
+$$
+
+Succesive approximation method :
+
+$$
+u^{(0)}(t,0) = 0 \\
+u^{(1)}(t,a) = \begin{pmatrix}
+a_1 e^{-t} \\ 0
+\end{pmatrix} \\
+u^{(2)}(t,a) = \begin{pmatrix}
+a_1 e^{-t} \\ - \frac{1}{3} e_1^2 e^{-2t}
+\end{pmatrix}
+$$
+
+We take "approximately"" $u^{(2)} \approx u(t,a)$
+
+
+
+
+
+  
+
+
+
+
+
+
