@@ -55,9 +55,36 @@ $$
 
 The eigenvalues of $A$ are $\lambda_1 = -1$ and $\lambda_2 = 6$ and eigenvectors are $v_1 = \begin{pmatrix} 1 \\ -1 \end{pmatrix}$ and $v_2 = \begin{pmatrix} 2 \\ 5 \end{pmatrix}$
 
+Th.
+Suppose that 0 is a center for linear systems with A=Df(0).
 
+Then 0 is either center, focus or center focus for the non linear system (1).
 
+(see proof on the recording)
 
+Remark!!: A center focus cannot accure in analytic systems.
+So if f is analytic, 0 is acenter for a linear sysyte
+then 0 is other center or focus for non linear system
 
+### How to distinguis a center from focus
+The first way: Lyaupunov functions approach
 
+Exercices on the video
 
+The second way: Write the system in polar coordinate and try to investigate the behavior of r and $\theta$ as $t \rightarrow \infty$
+
+The third way: Look for symetric properties in respect to axies or 1 axis
+
+Th: Let $f \in C^1(E)$, $\bar{0} \in E$ f(0) = 0, 
+symetric wrt one of the axis 
+
+Exemple:
+
+$$
+\begin{cases}
+\dot{x} = -xy-y \\
+\dot{y} = x^2+x
+\end{cases}
+$$
+
+After change of variable, the system is symetric (wrt x axis) 
