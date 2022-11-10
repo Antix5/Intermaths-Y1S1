@@ -88,3 +88,59 @@ $$
 $$
 
 After change of variable, the system is symetric (wrt x axis) 
+
+Now we consider the case A not equal to 0
+
+Assume that the Taylor exepansion of P and Q begin with m.th degree terms $P_m(x,y)$ and $Q_m(x,y)$
+Consider
+$$
+g(\theta) = cos(\theta).Q_m(cos(\theta),sin(\theta)) - sin(\theta).P_m(cos(\theta),sin(\theta))
+$$
+
+Assume g diff from 0.Then, the equation $g(\theta) = 0$ has at most 2(m+1) roots $\theta = \theta_U$ which define derection along wich trajectories of (1) may appraoch $\bar{0}$.
+Lines, corresponding to these directions divide neiborhood of $\bar{0}$ into finite number of regions called **sectors**.
+
+Def: A sector which is topologically equivalent to
+
+[image that I cannot drow in markdown]
+
+it's called an hyperbolic sector.
+
+[other image that I cannot draw]
+
+parabolic sector
+
+[other image that I cannot draw]
+
+a) if m odd , am>0 , then 0 is unstable
+b) if m odd, am<0, then 0 is stable
+c) if m even, am>0, then 0 is a saddle node
+
+$$
+\begin{cases}
+\dot{x} = y \\
+\dot{y} = a_n x^k (1 + h(x)) + b_n x^n y (1 + g(y)) + y^2 R(x,y) 
+\end{cases}
+$$
+
+$k \geq 2$, $a_k \ne 0$ and $n \geq 1$
+
+Th. Let k= 2m, m>=1 Then 1) 0 is a casp if $b_n=0$ and also if $b_n \ne 0$ and $n \geq m$ 2) 0 is a saddle if $b_n \ne 0$ and $n < m$
+
+Th Let k = 2m +& , m>=1 $\lambda := b_n^2 + 4(m+1) a_k$. Then if $a_k > 0$ then o is a saddle
+
+If $a_k < 0$ then 0 is 1) focus or center if $b_n = 0$ and also if $b_n \ne 0$ and $n > m$ or if n=m and $\lambda <
+ 0$
+
+ 2) node if $b_n \ne 0$ , n is even and n < m and also if $b_n \ne 0$ , n is even and n = m and $\lambda \geq 0$
+
+3) critical point with elliptic domain if b_n \ne 0 , n is odd and n < m and also if $b_n \ne 0$ , n is odd and n = m and $\lambda \geq 0$
+
+Remark: If A=0 then the classification of possible phase portraits is sties (???) possible but too complicated
+
+Central Manifold Theorem
+
+A = Df(0) has c engivalues with real part $\lambda_1 = 0$, s engivalues with real part $\lambda_2 < 0$ 
+(I missed it)
+
+Too many things to write down, see the recording
