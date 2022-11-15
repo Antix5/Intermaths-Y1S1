@@ -22,7 +22,7 @@ $$
 a(x,t) \frac{dt}{ds} |_{s=s_0} - b(x,t) \frac{dx}{ds} |_{s=s_0} \neq 0 \quad (II)
 $$
 
-Then $\mathcal{U}$ nbd of $(x_0, t_0) \exists!$ solution of the PDE $(I)$ satifying the initial condition $\forall x \in C$ for $\mathcal{U}$
+Then on $\mathcal{U}$ neighbourhood of $(x_0, t_0) \exists!$ solution of the PDE $(I)$ that satifies the initial condition $\forall x \in C$
 
 
 #### Exemple of use :
