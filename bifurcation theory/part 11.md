@@ -144,3 +144,19 @@ A = Df(0) has c engivalues with real part $\lambda_1 = 0$, s engivalues with rea
 (I missed it)
 
 Too many things to write down, see the recording
+
+### Center Manifold Theorem
+
+C is a square matrix (c*c)
+having real part eigenvalues
+
+P is a square matrix having a negative ral part eiganvalues
+
+F and G such that
+
+F(0)=G(0)=0 and DF(0)=DG(0)=0
+
+and a "smooth fuction" such that h defines the flow on the center manifold loccally around the origin
+
+(see the book or the recording)
+

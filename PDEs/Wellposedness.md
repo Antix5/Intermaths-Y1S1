@@ -7,15 +7,16 @@ a,b,c \in \mathcal{C}^1(\Omega), \quad f \in \mathcal{C}^1(\Omega) , \quad \Omeg
 \end{cases}
 $ $\quad (I)$
 
-Let $a^2 + b^2 \neq 0$ 
+$C_0 = (\bar{x}(\sigma),\bar{y}(\sigma)) \in C^1(I)$ a curve in $\Omega$ for some Interval I such that
 
-Let C be a curve in $\Omega$ parametrized by $\begin{cases} t(s) = s \\ x(s) = s \end{cases} \quad$, $\quad s \in I \subset R$
+$$
+u(\bar{x}(\sigma),\bar{y}(\sigma)) = \bar{u}(\sigma) \quad \text{ for some } \bar{u} \in \mathcal{C}^1(I)
+$$
 
-Tangent vector $\frac{d t(s)}{d s} , \frac{d x(s)}{d s}$ $\quad (I)$
+Assume
+ $a^2 + b^2 \neq 0 \forall (x,y) \in \Omega$ 
 
-$u = \Phi \in C \text{ s.t }, u(x_0(s),t_0(s)) = \Phi(s)$
-
-Then  
+Let $(x_0,y_0) = (\bar{x}(0),\bar{y}(0)) \in C_0$ such that
 
 $$
 a(x,t) \frac{dt}{ds} |_{s=s_0} - b(x,t) \frac{dx}{ds} |_{s=s_0} \neq 0 \quad (II)
@@ -61,3 +62,4 @@ $$
 $$
 
 This condition is also verified, the problem is therefore well-posed.
+
