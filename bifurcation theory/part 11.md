@@ -160,3 +160,6 @@ and a "smooth fuction" such that h defines the flow on the center manifold locca
 
 (see the book or the recording)
 
+
+
+

@@ -34,11 +34,22 @@ $$- \int_0^1 u_x^2 dx = \int_0^1 u_{xx} u dx$$
 
 $$\Rightarrow \frac{1}{2} \frac{d}{dt} \int_0^1 u^2 dx = - \int_0^1 u_{x}^2 dx$$
 
-$$E'(t) = - \int_0^1 u_{x}^2 dx = \text{negative consant} $$
+$$E'(t) = - \int_0^1 u_{x}^2 dx = \text{negative consant or null} $$
 
 $$\Rightarrow E(0) \geq E(t) \quad \forall t \geq 0$$
 
-when $$E(0) = \frac{1}{2} \int_0^1 u(x,0) dx = 0$$
+Now let's assume that the equation has 2 solutions that we will name $v$ and $q$ (using the principle of superposition)
+
+$w = v - q$ should also be a solution of the equation
+
+$$\frac{1}{2} \frac{d}{dt} \int_0^1 w(x,0)^2 dx = 0$$
+
+because $w^2$ cannot be negative therefore $w$ is null
+and we have $v = q$
+
+So, uniqueness of solutions
+
+
 
 
 
