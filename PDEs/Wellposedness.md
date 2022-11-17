@@ -1,7 +1,6 @@
 ### Well-posedness
 
-$
-\begin{cases}
+ $\begin{cases}
 a(x,t)u_t(x,t) + b(x,t)u_x(x,t) + c(x,t)u(x,t) = f(x,t) \\
 a,b,c \in \mathcal{C}^1(\Omega), \quad f \in \mathcal{C}^1(\Omega) , \quad \Omega \subset \mathbb{R}, \quad (x,t) \in \Omega 
 \end{cases}
@@ -27,7 +26,7 @@ Then on $\mathcal{U}$ neighbourhood of $(x_0, t_0) \exists!$ solution of the PDE
 
 #### Exemple of use :
 
-$\quad
+ $\quad
 \begin{cases}
 u_t + xu_x = 2u+x  \\
 u(x,1) = x-4
@@ -53,7 +52,7 @@ We know that $u(x,1) = x-4 = u(s,1) = s-4$ due to the parametrisation.
 
 and $x(s) = s$ and $t(s) = 1$
 
-$ \Rightarrow \frac{dx}{ds} |_{s=s_0} = 1 \quad \frac{dt}{ds} |_{s=s_0} = 0$
+ $\Rightarrow \frac{dx}{ds} |_{s=s_0} = 1 \quad \frac{dt}{ds} |_{s=s_0} = 0$
 
 Therefore,
 
