@@ -1,6 +1,6 @@
 ### Well-posedness
 
-let $\begin{cases} a(x,t)u_t(x,t) + b(x,t)u_x(x,t) + c(x,t)u(x,t) = f(x,t) \\ a,b,c \in \mathcal{C}^1(\Omega), \quad f \in \mathcal{C}^1(\Omega) , \quad \Omega \subset \mathbb{R}, \quad (x,t) \in \Omega \end{cases}$ $\quad (I)$
+$$\begin{cases} a(x,t)u_t(x,t) + b(x,t)u_x(x,t) + c(x,t)u(x,t) = f(x,t) \\ a,b,c \in \mathcal{C}^1(\Omega), \quad f \in \mathcal{C}^1(\Omega) , \quad \Omega \subset \mathbb{R}, \quad (x,t) \in \Omega \end{cases} \quad (I)$$
 
 $C_0 = (\bar{x}(\sigma),\bar{y}(\sigma)) \in C^1(I)$ a curve in $\Omega$ for some Interval I such that
 
@@ -22,7 +22,7 @@ Then on $\mathcal{U}$ neighbourhood of $(x_0, t_0) \exists!$ solution of the PDE
 
 #### Exemple of use :
 
- $\quad \begin{cases} u_t + xu_x = 2u+x  \\ u(x,1) = x-4 \end{cases} \quad (1)$
+ $$\quad \begin{cases} u_t + xu_x = 2u+x  \\ u(x,1) = x-4 \end{cases} \quad (1)$$
 
 - Also in view of point (1), above, discuss the well-posedness of the problem (1)
 
