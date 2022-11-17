@@ -1,6 +1,7 @@
 ### Well-posedness
 
-$$\begin{cases} a(x,t)u_t(x,t) + b(x,t)u_x(x,t) + c(x,t)u(x,t) = f(x,t) \\ a,b,c \in \mathcal{C}^1(\Omega), \quad f \in \mathcal{C}^1(\Omega) , \quad \Omega \subset \mathbb{R}, \quad (x,t) \in \Omega \end{cases} \quad (I)$$
+$$\begin{cases} a(x,t)u_t(x,t) + b(x,t)u_x(x,t) + c(x,t)u(x,t) = f(x,t) \\
+a,b,c \in \mathcal{C}^1(\Omega), \quad f \in \mathcal{C}^1(\Omega) , \quad \Omega \subset \mathbb{R}, \quad (x,t) \in \Omega \end{cases} \quad (I)$$
 
 $C_0 = (\bar{x}(\sigma),\bar{y}(\sigma)) \in C^1(I)$ a curve in $\Omega$ for some Interval I such that
 
@@ -43,7 +44,7 @@ We know that $u(x,1) = x-4 = u(s,1) = s-4$ due to the parametrisation.
 
 and $x(s) = s$ and $t(s) = 1$
 
- $\Rightarrow \frac{dx}{ds} |_{s=s_0} = 1 \quad \frac{dt}{ds} |_{s=s_0} = 0$
+ $$\Rightarrow \frac{dx}{ds} |_{s=s_0} = 1 \quad \frac{dt}{ds} |_{s=s_0} = 0$$
 
 Therefore,
 
