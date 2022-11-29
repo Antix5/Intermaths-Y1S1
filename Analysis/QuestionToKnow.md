@@ -31,25 +31,70 @@ Prove that $d(x, y) = ||x − y||$ is a distance on X.**
 
 1. **Define the concepts of convergent sequence and limit of a sequence on a metric space.**
 
-For a sequence $(x_n)$ in a metric space $(X,d)$, we say that the sequence converges to $x$ if and only if $d(x_n,x) \rightarrow 0$ as $n \rightarrow \infty$.
+For a sequence $(x_n)$ in a metric space $(X,d)$, we say that the sequence converges to $x$ if and only if for every $\epsilon > 0$ there exists a $N$ such that $d(x_n,x) < \epsilon$ for all $n \geq N$.
+
+The point x is called the limit of the sequence $(x_n)$ and is denoted by $\lim_{n \rightarrow \infty} x_n = x$.
 
 
-2. Provide the definition of uniformly continuous function between two metric spaces at some given point.
+1. **Provide the definition of uniformly continuous function between two metric spaces at some given point.**
+
+$$
+ \forall \varepsilon >0\;\exists \delta >0\;\forall x\in X\;\forall y\in X:\,d_{1}(x,y)<\delta \,\Rightarrow \,d_{2}(f(x),f(y))<\varepsilon 
+ $$
+
+
    
-3. Prove that a function f : X → Y between two metric spaces is continuous
-at x ∈ X if and only if it is sequentially continuous at x.
+1. **Prove that a function f : X → Y between two metric spaces is continuous at x ∈ X if and only if it is sequentially continuous at x.**
 
-1. Define the concept of topological space. Let C ⊂ X be a subset of a topological space. Define the closure of C and the interior of C. When is C
-called a dense subset of X? Define the concept of separable metric space.
+__*Proof*__.
+First, we show that if f is continuous, then it is sequentially continuous :
+
+Suppose that f is continuous at x, and let $x_n \rightarrow x$. Let $e > 0$ be given.
+By the continuity of f , we can choose $δ > 0$ such that $d(x_n, x) < δ$ implies
+$d(f(x_n), f(x)) < e$. By the convergence or $(x_n)_n$, we can choose N so that
+$n ≥ N$ implies d(x, x_n) < δ. Therefore, $n ≥ N$ implies $d(f(xn), f(x)) < e$, and
+this means that $f(x_n) → f(x_n)$.
 
 
-7. Prove that a subset of a topological space is closed if and only if it coincides with its closure.
+To prove the converse, we prove that if f is discontinuous, then it is not sequentially continuous. If f is discontinuous at x, then there is an $e > 0$ such that for every $n ∈ N$ there exists $x_n ∈ X$ with $d(x_n, x) < \frac{1}{n}$ and
+$d(f(x_nn), f(x)) ≥ e$. The sequence $(x_n)$ constructed converges to x but $(f(x_n))$
+does not converge to $f(x)$. Hence, f is not sequentially continuous
 
 
-8. Define the open sets of a metric space (X, d). Prove they define a topology.
+2. **Define the concept of topological space. Let $C \subset X$ be a subset of a topological space. Define the closure of C and the interior of C. When is C called a dense subset of X? Define the concept of separable metric space.**
+
+Closure of C is the smallest closed subset of X containing C.
+
+The interior of C is the largest open subset of X containing C.
+
+A subset C is dense if its closure is the whole space X. A metric space is separable if it contains a countable dense subset.
 
 
-9. Prove that a subset F of a metric space is closed if and only if it contains
+3. **Prove that a subset of a topological space is closed if and only if it coincides with its closure.**
+
+Proof by contradiction :
+We are going to try to find a closed topological subset of X that is not equal to its closure.
+
+Let $C \subset X$ be a closed topological subset of X : 
+
+Therefore :
+
+   1. $C$ is closed
+      $C \subset X$
+
+We now assume there is a smaller closed subset of X that contains C, let's call it $C'$
+
+Therefore, $C' \subset C$ , but $C'$ is smaller than $C$, which is a contradiction.
+
+Therefore, $C$ is equal to its closure.
+
+
+1. **Define the open sets of a metric space (X, d). Prove they define a topology.**
+
+
+
+
+2. Prove that a subset F of a metric space is closed if and only if it contains
 all the limits of convergent sequences xn ∈ F.
 
 
