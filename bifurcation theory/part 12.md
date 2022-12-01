@@ -64,3 +64,5 @@ $$Df(-1,0) = \begin{pmatrix}
 0 & 1 \\
 -1 & 0
 \end{pmatrix} \quad \text{it's a center (because it's an hamiltonian)}$$
+
+(lookup existence theorem poincaré)
